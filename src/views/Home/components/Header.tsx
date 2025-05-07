@@ -11,7 +11,7 @@ export default function Header() {
   />
 
         {/* Overlay escuro para contraste */}
-        <div className="absolute inset-0  backdrop-blur-sm z-10" />
+        <div className="absolute inset-0   z-10" />
 
         <div className="relative z-20 grid grid-cols-1 md:grid-cols-2 items-center justify-center h-full px-6 md:px-16 gap-10">
   {/* Texto à esquerda */}
