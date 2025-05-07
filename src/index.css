@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+ scroll-behavior: smooth;
+}
+
 .inter {
  font-family: "Inter", sans-serif;
 }
@@ -7,3 +11,5 @@
 .roboto {
  font-family: "Roboto", sans-serif;
 }
+
+

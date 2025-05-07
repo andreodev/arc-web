@@ -1,11 +1,12 @@
 import rocket from "../../../assets/cardsManagement/rocket.png";
-import control from "../../../assets/cardsManagement/control.png"
-import security from "../../../assets/cardsManagement/security.png"
-import arrow from "../../../assets/cardsManagement/arrow.png"
-import experience from "../../../assets/cardsManagement/experience.png"
-import document from "../../../assets/cardsManagement/document.png"
-import suport from "../../../assets/cardsManagement/suport.png"
-import machininha from "../../../assets/cardsManagement/machininha.png"
+import control from "../../../assets/cardsManagement/control.png";
+import security from "../../../assets/cardsManagement/security.png";
+import arrow from "../../../assets/cardsManagement/arrow.png";
+import experience from "../../../assets/cardsManagement/experience.png";
+import document from "../../../assets/cardsManagement/document.png";
+import suport from "../../../assets/cardsManagement/suport.png";
+import machininha from "../../../assets/cardsManagement/machininha.png";
+
 export default function InfoManagementSection() {
   const cards = [
     {
@@ -57,19 +58,24 @@ export default function InfoManagementSection() {
       textoBold: "Controle total direto da maquininha",
     },
   ];
+
   return (
-    <div className="bg-[#CCE9E7] flex justify-center items-center py-16">
-      <div className="w-9/12 text-center">
-        <h1 className="font-bold text-[#009172] text-6xl roboto mb-12 p-12">
-          TUDO QUE VOCÊ PRECISA <br></br>PARA SUA GESTÃO
+    <div className="bg-[#CCE9E7] flex justify-center items-center py-16 px-4">
+      <div className="w-full max-w-7xl text-center">
+        <h1 className="font-bold text-[#009172] text-3xl md:text-4xl lg:text-6xl roboto mb-12 p-4 md:p-12 leading-tight">
+          TUDO QUE VOCÊ PRECISA <br />
+          PARA SUA GESTÃO
         </h1>
-        <div className="grid grid-cols-4 gap-6">
-          {cards.map((cards) => (
-            <div className="bg-white p-6 rounded-xl shadow w-[100%]" key={cards.id}>
-              <img src={cards.icons} alt="" />
-              <h1 className="text-[#009172] text-start mt-8 p-2 inter">
-                <span className="font-bold">{cards.textoBold} </span>
-                {cards.texto}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {cards.map((card) => (
+            <div
+              className="bg-white p-6 rounded-xl shadow w-full transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+              key={card.id}
+            >
+              <img src={card.icons} alt="" className="mx-auto h-16" />
+              <h1 className="text-[#009172] text-start mt-8 p-2 inter text-sm md:text-base">
+                <span className="font-bold">{card.textoBold} </span>
+                {card.texto}
               </h1>
             </div>
           ))}

@@ -1,13 +1,18 @@
-import Layout from "../../components/Layout";
-import BottomBar from "./components/Bottom";
 import Divider from "./components/Divider";
 import Header from "./components/Header";
 import InfoManagementSection from "./components/InfoManagementCard";
-import AboutSolution from "./components/SecondCard";
-
+import KronosApp from "./components/KronoApp";
+import SecondaryHeader from "./components/SecodaryHeader";
+import AboutSolution from "./components/Container";
+import KronosFood from "./components/KronosFood"
+import KronosVendas from "./components/KronosVendas";
+import IntegrationPOS from "./components/IntegrationPOS";
 export default function HomeView() {
+
+
+
  return(
-   <Layout>
+   <section>
     <div>
      <Header />  
     </div>
@@ -20,9 +25,24 @@ export default function HomeView() {
     <div>
       <Divider />
     </div>
-    <div>
-      <BottomBar />
-    </div>
-   </Layout>
+
+    <section>
+        <div id="secondary-header">
+            <SecondaryHeader />
+        </div>
+        <div>
+            <KronosApp />
+        </div>
+        <div>
+          <KronosFood />
+        </div>
+        <div>
+          <KronosVendas />
+        </div>
+        <div>
+          <IntegrationPOS />
+        </div>
+    </section>
+   </section>
  )
 }
