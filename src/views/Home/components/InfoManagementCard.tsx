@@ -60,8 +60,8 @@ export default function InfoManagementSection() {
   return (
     <div className="bg-[#CCE9E7] flex justify-center items-center py-16">
       <div className="w-9/12 text-center">
-        <h1 className="font-bold text-[#009172] text-6xl roboto mb-12">
-          TUDO QUE VOCÊ PRECISA PARA SUA GESTÃO
+        <h1 className="font-bold text-[#009172] text-6xl roboto mb-12 p-12">
+          TUDO QUE VOCÊ PRECISA <br></br>PARA SUA GESTÃO
         </h1>
         <div className="grid grid-cols-4 gap-6">
           {cards.map((cards) => (
