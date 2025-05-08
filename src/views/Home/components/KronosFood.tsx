@@ -1,5 +1,5 @@
 import KronosFoodImage from "../../../assets/kronosFood.png";
-import iconKronosFood from "../../../assets/IconkronosFoodBig.png";
+import iconKronosFood from "../../../assets/bigIcon/IconkronosFoodBig.png"
 import GooglePlayDark from "../../../assets/playstoreDark.png";
 import AppStoreDark from "../../../assets/apple-store-dark.png";
 import { motion } from "framer-motion";

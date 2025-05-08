@@ -1,5 +1,5 @@
 import KronosVendasImage from "../../../assets/KronosVendas.png";
-import iconKronosVendas from "../../../assets/iconKronosVendasBig.png";
+import iconKronosVendas from "../../../assets/bigIcon/iconKronosVendasBig.png"
 import GooglePlayDark from "../../../assets/playstoreDark.png";
 import AppStoreDark from "../../../assets/apple-store-dark.png";
 

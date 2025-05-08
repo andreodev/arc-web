@@ -1,7 +1,7 @@
 import KronosAppImage from "../../../assets/kronosApp.png";
 import GooglePlay from "../../../assets/google-play.png";
 import AppStore from "../../../assets/app-store.png";
-import iconKronosApp from "../../../assets/iconkronosApp.png"
+import iconKronosApp from "../../../assets/bigIcon/iconKronosAppBig.png"
 export default function KronosApp() {
   return (
     <section className="relative overflow-hidden py-12 px-4 sm:px-8 md:px-16">
