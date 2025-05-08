@@ -7,17 +7,17 @@ import KronosAppImagem from "../../../assets/imagensAlternadas/kronosApp.png";
 const imagens = [
   {
     imagem: KronosFoodImagem,
-    animacao: { initial: { opacity: 0, y: 10, scale: 0.95 }, animate: { opacity: 1, y: 0, scale: 1  }, exit: { opacity: 0, y: 0, scale: 1 } }
+    animacao: { initial: { opacity: 0, x: -20 }, animate: { opacity: 1, x:0 }, exit: { opacity: 0, x: 20 } }
 
   },
   {
     imagem: KronosVendaImagem,
-    animacao: { initial: { opacity: 0, y: 10, scale: 0.95 }, animate: { opacity: 1, y: 0, scale: 1  }, exit: { opacity: 0, y: 0, scale: 1 } }
+    animacao: { initial: { opacity: 0, x: -20 }, animate: { opacity: 1, x:0 }, exit: { opacity: 0, x: 20 } }
 
   },
   {
     imagem: KronosAppImagem,
-    animacao: { initial: { opacity: 0, y: 10, scale: 0.95 }, animate: { opacity: 1, y: 0, scale: 1  }, exit: { opacity: 0, y: 0, scale: 1} }
+    animacao: { initial: { opacity: 0, x: -20 }, animate: { opacity: 1, x:0 }, exit: { opacity: 0, x: 20 } }
   }
 ];
 

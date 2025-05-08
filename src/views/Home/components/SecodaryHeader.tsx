@@ -1,13 +1,8 @@
-import bg from "../../../assets/Rectangle 1.png";
 
 export default function SecondaryHeader() {
   return (
-    <section className="relative h-screen min-h-[600px]">
-      <img
-        src={bg}
-        alt="Background"
-        className="absolute w-full h-full object-cover z-0 bg-[#05313E]"
-      />
+    <section className="relative  px-6 py-16 md:px-12 lg:px-20 bg-[#05313E] overflow-hidden h-screen w-full">
+     
 
       <div className="absolute inset-0 bg-black/50 z-10" />
 

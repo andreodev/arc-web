@@ -1,5 +1,9 @@
 import image from "../../../assets/Group 3.png";
-import { Link } from "react-scroll";
+import iconKronosApp from "../../../assets/iconkronosApp.png";
+import iconKronosFood from "../../../assets/IconkronosFood.png";
+import iconKronosVendas from "../../../assets/icnonKronosVendas.png";
+import { Link } from "react-router-dom";
+
 
 export default function AboutSolution() {
   return (
@@ -23,25 +27,32 @@ export default function AboutSolution() {
           </p>
 
           {/* Colunas */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 items-stretch">
             {/* Card 1 */}
-            <div className="p-2 md:p-4 rounded-xl text-center md:text-start space-y-6">
+            <div className="p-2 md:p-4 rounded-xl text-center md:text-start  justify-between  ">
               <div className="mb-6">
-                <h2 className="text-[#009172] font-bold text-2xl md:text-3xl roboto mb-2">
-                  Kronos App
-                </h2>
+                <div className="flex items-center justify-start gap-2 mb-2">
+                  <img src={iconKronosApp} alt="" />
+                  <h2 className="text-[#009172] font-bold text-3xl  md:text-3xl roboto">
+                    Kronos App
+                  </h2>
+                </div>
                 <p className="text-[#009172] inter text-sm md:text-base">
                   <span className="font-bold">
                     Acompanhe o desempenho financeiro da sua empresa com o
                     Kronos App.
                   </span>{" "}
-                  Dashboards completos de fluxo de caixa, receitas, contas a receber e a pagar.
+                  Dashboards completos de fluxo de caixa, receitas, contas a
+                  receber e a pagar.
                 </p>
               </div>
               <div>
-                <h2 className="text-[#009172] font-bold text-2xl md:text-3xl roboto mb-2">
-                  Kronos Vendas
-                </h2>
+                <div className="flex items-center justify-start gap-2 mb-2 mt-10">
+                  <img src={iconKronosVendas} alt="" />
+                  <h2 className="text-[#009172] font-extrabold text-3xl md:text-3xl roboto">
+                    Kronos Vendas
+                  </h2>
+                </div>
                 <p className="text-[#009172] inter text-sm md:text-base">
                   <span className="font-bold">
                     Gerencie vendas e pedidos de forma eficiente.
@@ -52,25 +63,30 @@ export default function AboutSolution() {
             </div>
 
             {/* Imagem e botão */}
-            <div className="rounded-xl text-center flex flex-col items-center justify-between gap-6">
-              <img src={image} alt="soluções" className="w-full max-w-xs mx-auto" />
+            <div className="rounded-xl text-center flex flex-col justify-between items-center h-full  p-4">
+              <img
+                src={image}
+                alt="soluções"
+                className="w-full max-w-xs mx-auto"
+              />
               <Link
-                to="secondary-header"
-                smooth={true}
-                duration={800}
-                offset={-20}
-                className="font-light inter bg-[#009172] rounded-xl px-6 py-3 w-full sm:w-9/12 text-xl text-white shadow-md shadow-gray-500 cursor-pointer hover:drop-shadow-xl transform hover:scale-105 transition-transform duration-300"
+                to="/plus"
+              
+                className="font-light inter bg-[#009172] rounded-xl px-6 py-3 w-full sm:w-9/12 text-xl text-white shadow-md shadow-gray-500 cursor-pointer hover:drop-shadow-xl transform hover:scale-105 transition-transform duration-300 mt-6"
               >
                 Saiba mais
               </Link>
             </div>
 
             {/* Card 2 */}
-            <div className="p-2 md:p-4 rounded-xl text-center md:text-start space-y-6">
+            <div className="p-2 md:p-4 rounded-xl text-center md:text-start space-y-2  justify-between  ">
               <div className="mb-6">
-                <h2 className="text-[#009172] font-bold text-2xl md:text-3xl roboto mb-2">
-                  Kronos Food
-                </h2>
+                <div className="flex items-center justify-start gap-2 mb-2">
+                  <img src={iconKronosFood} alt="" />
+                  <h2 className="text-[#009172] font-extrabold text-3xl md:text-3xl roboto">
+                    Kronos Food
+                  </h2>
+                </div>
                 <p className="text-[#009172] inter text-sm md:text-base">
                   <span className="font-bold">
                     Gerenciamento fácil de mesas e comandas.
@@ -79,9 +95,11 @@ export default function AboutSolution() {
                 </p>
               </div>
               <div>
-                <h2 className="text-[#009172] font-bold text-2xl md:text-3xl roboto mb-2">
+                <div className="flex items-center justify-start gap-2 mb-2 mt-20">
+                  <h2 className="text-[#009172] font-extrabold text-3xl md:text-3xl roboto">
                   Integração POS
-                </h2>
+                  </h2>
+                </div>
                 <p className="text-[#009172] inter text-sm md:text-base">
                   <span className="font-bold">
                     Acesse via maquininha de cartão

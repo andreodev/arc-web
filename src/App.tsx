@@ -1,14 +1,14 @@
-import Layout from './components/Layout'
-import HomeView from './views/Home/HomeView'
+import { BrowserRouter as Router } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
-
   return (
-    <Layout>
-
-        <HomeView />
-    </Layout>
-  )
+    <Router>
+      <ScrollToTop />
+      <AnimatedRoutes />
+    </Router>
+  );
 }
 
-export default App
+export default App;

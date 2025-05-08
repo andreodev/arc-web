@@ -18,7 +18,7 @@ export default function Divider() {
       {/* Texto sobreposto */}
       <div className="absolute inset-0 flex items-center justify-center">
         <p className="text-white text-xl md:text-2xl text-center px-4 py-2">
-          Quer controle total do seu negócio? <span className="font-bold">Veja uma demonstração grátis!</span>
+          Quer controle total do seu negócio? <a className="font-bold" target="_blank" rel="noopener noreferrer">Veja uma demonstração grátis!</a>
         </p>
       </div>
     </div>
