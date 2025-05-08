@@ -3,7 +3,7 @@ import TextoAlternado from "../function/TextoAlternado";
 
 export default function Header() {
   return (
-    <section className="relative px-6 py-16 md:px-12 lg:px-20 bg-[#05313E] h-full overflow-hidden">
+    <section className="relative px-6 py-16 md:px-12 lg:px-20 bg-[#05313E]  overflow-hidden">
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-black/50 z-10" />
 
